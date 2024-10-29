@@ -93,7 +93,7 @@ class Jogo {
             } else if (rolagemHeroi === 1) { // Derrota automática com rolagem de 1
                 console.log(`${heroi.nome} falhou criticamente e foi derrotado instantaneamente!`);
                 break;
-            } else if (rolagemHeroi > 12) { // Ataque bem-sucedido se a rolagem for maior que 12
+            } else if (rolagemHeroi >= 12) { // Ataque bem-sucedido se a rolagem for maior que 12
                 let dano = this.rolarDado(this.minDmg, this.maxDmg); // Dano variável entre 8 e 12
                 ursoCorujaVida -= dano;
                 console.log(`${heroi.nome}: acertei o ataque!`);
